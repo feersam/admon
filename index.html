@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurante El Buen Sabor</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>El Buen Sabor 🍔🍟</h1>
+    <button id="modoOscuroBtn">🌙 Modo Oscuro</button>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#ordenar">Ordenar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>La mejor hamburguesa con papas de la ciudad</h2>
+      <p>Sencillo. Delicioso. Sin complicaciones.</p>
+      <button onclick="ordenarAhora()">¡Quiero una ahora!</button>
+    </section>
+
+    <section id="menu" class="menu">
+      <h3>Menú</h3>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Hamburguesa con papas">
+        <h4>Combo Clásico</h4>
+        <p>Hamburguesa + papas + bebida</p>
+        <p class="precio">Q 69.99</p>
+      </div>
+    </section>
+
+    <section id="nosotros" class="about">
+      <h3>Sobre Nosotros</h3>
+      <p>En El Buen Sabor creemos en lo simple: una hamburguesa jugosa, papas crujientes y una experiencia que siempre te deja con ganas de volver.</p>
+    </section>
+
+    <section class="testimonios">
+      <h3>Lo que dicen nuestros clientes</h3>
+      <div class="testimonial">
+        <p>🍔 “¡La mejor hamburguesa que he probado en mi vida!”</p>
+        <span>– Laura M.</span>
+      </div>
+      <div class="testimonial">
+        <p>🍟 “Súper rápido, delicioso y siempre crujiente. ¡Recomendado 100%!”</p>
+        <span>– Carlos R.</span>
+      </div>
+    </section>
+
+    <section id="ordenar" class="ordenar">
+      <h3>Ordena tu combo</h3>
+      <form id="formOrden">
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="number" placeholder="Cantidad" min="1" required />
+        <button type="submit">Enviar pedido</button>
+      </form>
+      <p id="mensajePedido"></p>
+    </section>
+
+    <section class="ubicacion">
+      <h3>¿Dónde estamos?</h3>
+      <p>Visítanos en nuestra sucursal central:</p>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.4121909586146!2d-90.58695162597655!3d14.52724627863954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3d53d83041b%3A0x13df0bd3e81c0d13!2sVilla%20Nueva%2C%20Guatemala!5e0!3m2!1ses-419!2sgt!4v1712758040000!5m2!1ses-419!2sgt"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 El Buen Sabor. Todos los derechos reservados.</p>
+  </footer>
+  <section id="contacto" class="contacto">
+    <h3>Síguenos en redes</h3>
+    <p><a href="https://www.instagram.com/elbuen_sabor.gt?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram: @elbuen_sabor.gt</a></p>
+  </section>
+</main>
+
+  <a href="https://wa.me/48935147" class="whatsapp" target="_blank" title="¡Haz tu pedido por WhatsApp!">
+    📱
+  </a>
+
+  <script src="escript.js"></script>
+</body>
+</html>
